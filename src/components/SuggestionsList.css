@@ -1,0 +1,73 @@
+/* SuggestionsList.css */
+.suggestions-list {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.suggestions-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.suggestions-list li {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.suggestions-list li:hover {
+  transform: scale(1.02);
+}
+
+.suggestions-list h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #00796b;
+}
+
+.suggestions-list p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.suggestions-list .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.suggestions-list .buttons button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.suggestions-list .buttons button.like {
+  background-color: #43a047; /* Green */
+  color: white;
+}
+
+.suggestions-list .buttons button.like:hover {
+  background-color: #2e7d32; /* Darker green */
+}
+
+.suggestions-list .buttons button.dislike {
+  background-color: #e53935; /* Red */
+  color: white;
+}
+
+.suggestions-list .buttons button.dislike:hover {
+  background-color: #b71c1c; /* Darker red */
+}
+
